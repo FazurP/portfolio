@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>FazurP</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/93c5f0292a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+<body>
+    <div class="section" id="section-01">
+        <div class="profile">
+            <div class="img-container">
+                <img src="photo4970228845076654418.jpg" class="img-pic">
+            </div>
+            <div class="profile-content">
+                <div class="main-title">
+                    <h1>Fazur Alejandro</h1>
+                </div>
+                <div class="sub-title">
+                    <h2>Software Developer</h2>
+                </div>
+            </div>
+            <div class="profile-footer">
+                <div class="icons">
+                    <span><i style="color: #e34c26;" class="fab fa-html5"></i></span>
+                    <span><i style="color: rgb(240, 219, 79);" class="fab fa-js-square"></i></span>
+                    <span><i style="color: rgb(41, 101, 241);" class="fab fa-css3-alt"></i></span>
+                    <span><i style="color:rgb(97, 219, 251);" class="fab fa-react wheel"></i></span>
+                    <span><i style="color: rgb(65, 184, 131);" class="fab fa-vuejs"></i></span>
+                    <span><i style="color: rgb(248, 152, 32);" class="fab fa-java"></i></span>
+                    <span><i style="color: 	rgb(0, 173, 239);" class="fab fa-windows"></i></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="section" id="section-02">
+        <div class="experience">
+            <div class="card">
+                <div class="card-title">
+                    Digital-cv
+                </div>
+                <div class="card-body">
+                    Project requested for a university, in order to measure the level of preparation of its teachers and
+                    administrative staff
+                </div>
+                <div class="card-footer">
+                    <i style="color: #4078c0;" class="fab fa-github"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">
+                    Face mask secure
+                </div>
+                <div class="card-body">
+                    Identify who is wearing or not wearing a mask
+                    Stay protected!
+                </div>
+                <div class="card-footer">
+                    <i style="color: #4078c0;" class="fas fa-globe"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">
+                    Shipping app
+                </div>
+                <div class="card-body">
+                    Ship products and monitor them in real time
+                </div>
+                <div class="card-footer">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="touch-container" onclick="move()">
+            <span><a class="fas fa-fingerprint"></a></span>
+        </div>
+    </div>
+
+</body>
+<script>
+    let bool = true
+    function move() {
+        if (bool) {
+            document.querySelector('#section-02').scrollIntoView({
+                behavior: 'smooth'
+            });
+            bool = false
+        } else {
+            document.querySelector('#section-01').scrollIntoView({
+                behavior: 'smooth'
+            });
+            bool = true
+        }
+    }
+
+</script>
+
+</html>
